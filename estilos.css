@@ -1,0 +1,100 @@
+/* GENERALES---------*/
+* {box-sizing: border-box;}
+
+html, body {
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    text-align: center;
+   
+}
+
+/*Contenedor principal-------*/
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    min-width: 320px;   
+}
+
+/*Foto del producto---------*/
+.foto{
+  width: 250px;
+  height: 350px;
+  border-radius: .5rem 0 0 .5rem;
+  
+}
+
+/*Columna con texto--------*/
+.columna{
+    background-color: white;
+    border-radius: 0 .5rem .5rem 0;
+    width: 250px;
+    height: 350px;
+    margin-bottom: .3rem;
+    
+}
+
+.columna .perfume{
+    margin: 1rem;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family:monospace;
+}
+
+.columna .nombre{
+    margin: 1rem;
+    color:hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.columna .texto{
+    margin: 1rem;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Fraunces', serif;
+}
+
+.enlace{
+    color: white;
+    text-decoration: none;
+    background-color:  hsl(158, 36%, 37%);
+    padding:4%;
+    border-radius: .5rem .5rem .5rem .5rem;
+    font-size: 14px;
+   
+}
+.enlace:hover{
+    background-color:hsl(158, 71%, 18%) ;
+}
+
+/*Precios----------------*/
+.precios{
+    display: flex;
+    justify-content:flex-start;
+    padding: .5rem;
+    margin: 1rem;
+}  
+.precio1{
+    font-size: 30px;
+    margin-top: 0.5rem;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif
+}
+.precio2{
+    font-size: 12px;
+    text-decoration: line-through;
+    padding: .4rem;
+    color: hsl(228, 12%, 48%);
+}
