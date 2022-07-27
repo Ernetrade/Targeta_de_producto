@@ -19,30 +19,41 @@ nav{
    
 }
 
+img{
+    height: auto;
+    max-width: 100%;
+}
+
 /*Contenedor principal-------*/
 .principal{
+    text-align: center;
+    max-width: 768px;
+    min-width: 320px; 
+    padding: 10%;
+    width: auto;
+}
+
+.cont{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 768px;
-    min-width: 320px;   
+    text-align: center;   
 }
 
 /*Foto del producto---------*/
 .foto{
-  width: 250px;
-  height: 350px;
-  border-radius: .5rem 0 0 .5rem;
-  
-}
+    width: 250px;
+    height: 100%;
+    border-radius: .5rem 0 0 .5rem;
+} 
+   
 
 /*Columna con texto--------*/
 .columna{
     background-color: white;
     border-radius: 0 .5rem .5rem 0;
     width: 250px;
-    height: 350px;
-    margin-bottom: .3rem;
+    height: 375px;
     
 }
 
@@ -98,3 +109,57 @@ nav{
     padding: .4rem;
     color: hsl(228, 12%, 48%);
 }
+
+/*RESPONSIVE---------------------------------------------------------------*/
+@media screen and (max-width:375px){
+    .principal{
+        width: 5%;
+    }
+}
+
+@media screen and (max-width:535px) { 
+    body{
+        display: inherit;
+    }
+    
+   .cont{
+    display: inherit;
+    background-color: white;
+    border-radius: .5rem .5rem .5rem .5rem;
+    
+   }
+    
+   .columna{
+    width: 100% ;
+    height: 300px;
+    margin: auto;
+    padding: 11%;
+    border-radius: 0 0 .5rem .5rem;
+    padding: inherit;
+   }
+
+   
+
+   .foto{
+    width: 100% ;
+    height: 250px;
+    border-radius: .5rem .5rem 0 0;
+    }
+
+    .columna .perfume{
+        margin: auto;
+    }
+
+    .precios{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+}
+   
